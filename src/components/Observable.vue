@@ -1,29 +1,42 @@
 <template>
-  <slot />
-  <i ref="helperRef" />
+  <span ref="spanRef" />
+  <slot></slot>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+import { IntersectionTransitions } from '../IntersectionTransitions.js';
+
 export default {
   props: {
-    mode?: String,
+    mode: String,
   },
   setup(props) {
-    const helperRef = ref(null);
-
+    const spanRef = ref(null);
     onMounted(() => {
-      console.log(helperRef); // 0
+      const el = spanRef.value.nextElementSibling;
+      console.log(el);
 
+      el.classList.add('ivtr');
       if (props.mode) {
-        console.log(props.mode)
+        el.classList.add(`ivtr--${props.mode}`);
       }
-    }),
+      new IntersectionTransitions(el);
+    });
 
-    // expose to template and other options API hooks
     return {
-      helperRef,
+      spanRef,
     };
-  }
-}
+  },
+};
 </script>
+
+<style scoped>
+span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: none;
+}
+</style>

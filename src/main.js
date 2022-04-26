@@ -1,4 +1,8 @@
 const { createApp } = require('vue');
-import App from "./App.vue";
+import App from './App.vue';
+import Observable from './components/Observable.vue';
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.component('observable', Observable);
+
+app.mount('#app');
