@@ -126,52 +126,60 @@
         <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
       </li>
     </ul>
-    <Observable mode="btm">
+    <observable mode="btm">
       <h3>Ecosystem</h3>
-    </Observable>
+    </observable>
     <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
+      <observable mode="left">
+        <li>
+          <a href="https://router.vuejs.org" target="_blank" rel="noopener"
+            >vue-router</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a href="https://vuex.vuejs.org" target="_blank" rel="noopener"
+            >vuex</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a
+            href="https://github.com/vuejs/vue-devtools#vue-devtools"
+            target="_blank"
+            rel="noopener"
+            >vue-devtools</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
+            >vue-loader</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a
+            href="https://github.com/vuejs/awesome-vue"
+            target="_blank"
+            rel="noopener"
+            >awesome-vue</a
+          >
+        </li>
+      </observable>
     </ul>
   </div>
 </template>
 
 <script>
-import Observable from './Observable.vue';
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
-  },
-  components: {
-    Observable,
   },
 };
 </script>
