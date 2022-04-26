@@ -21,7 +21,6 @@ export default {
   --offset: 30px;
   --delay: 0s;
   --duration: 0.4s;
-  display: inline-block;
   opacity: 0;
   transition: transform var(--duration) ease-in-out var(--delay),
     opacity var(--duration) ease-in-out var(--delay);

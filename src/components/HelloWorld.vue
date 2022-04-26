@@ -126,6 +126,52 @@
         <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
       </li>
     </ul>
+    <observable mode="btm" inOut>
+      <h3>Ecosystem</h3>
+    </observable>
+    <ul>
+      <observable mode="left">
+        <li>
+          <a href="https://router.vuejs.org" target="_blank" rel="noopener"
+            >vue-router</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a href="https://vuex.vuejs.org" target="_blank" rel="noopener"
+            >vuex</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a
+            href="https://github.com/vuejs/vue-devtools#vue-devtools"
+            target="_blank"
+            rel="noopener"
+            >vue-devtools</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
+            >vue-loader</a
+          >
+        </li>
+      </observable>
+      <observable mode="left">
+        <li>
+          <a
+            href="https://github.com/vuejs/awesome-vue"
+            target="_blank"
+            rel="noopener"
+            >awesome-vue</a
+          >
+        </li>
+      </observable>
+    </ul>
     <observable mode="btm">
       <h3>Ecosystem</h3>
     </observable>

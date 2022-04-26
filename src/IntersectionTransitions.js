@@ -18,7 +18,7 @@ class IntersectionTransitions {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(this.classInView);
-        } else if (entry.target.dataset.inOut) {
+        } else if (entry.target.classList.contains('ivtr--in-out')) {
           entry.target.classList.remove(this.classInView);
         }
       });

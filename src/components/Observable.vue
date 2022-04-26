@@ -10,6 +10,7 @@ import { IntersectionTransitions } from '../IntersectionTransitions.js';
 export default {
   props: {
     mode: String,
+    inOut: Boolean,
   },
   setup(props) {
     const spanRef = ref(null);
@@ -18,9 +19,9 @@ export default {
       console.log(el);
 
       el.classList.add('ivtr');
-      if (props.mode) {
-        el.classList.add(`ivtr--${props.mode}`);
-      }
+      if (props.mode) el.classList.add(`ivtr--${props.mode}`);
+      if (props.inOut) el.classList.add('ivtr--in-out');
+
       new IntersectionTransitions(el);
     });
 
